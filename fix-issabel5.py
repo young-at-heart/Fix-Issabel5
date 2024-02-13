@@ -15,7 +15,7 @@ cmd = "use asteriskcdrdb; alter table cel alter eventextra set default 'NA'"
 c = 'mysql -uroot -p'+b+' -e "'+cmd+'"'
 os.system(c)
 
-os.system("cp -n queues.conf /etc/asterisk/")
-os.system("cp -n musiconhold.conf /etc/asterisk/")
+os.system("cp queues.conf /etc/asterisk/")
+os.system("cp musiconhold.conf /etc/asterisk/")
 
 print("Fixing Issabel5 Completed!!!\n")
